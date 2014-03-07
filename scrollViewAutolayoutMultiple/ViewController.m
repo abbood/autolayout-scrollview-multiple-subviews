@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *content1WidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *content2HeightConstraint;
 
 @end
 
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //self.content1WidthConstraint.constant = 500;
+    //self.content1WidthConstraint.constant = 500;
+    self.content2HeightConstraint.constant = 200;
 }
 
 - (void)didReceiveMemoryWarning
